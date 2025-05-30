@@ -63,6 +63,12 @@ export default function EngagementInvitation() {
 
             <motion.h1
               className="text-4xl md:text-5xl font-bold text-[#ffc065] mt-4 mb-2 tracking-wide dancing-script"
+              style={{
+                textShadow:
+                  "0 0 5px rgba(255, 192, 101, 0.5), 0 0 10px rgba(255, 192, 101, 0.3), 0 0 15px rgba(255, 192, 101, 0.2), 0 0 20px rgba(255, 192, 101, 0.1)",
+                WebkitTextStroke: "0.05px white",
+                animation: "pulse-glow 3s infinite alternate",
+              }}
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
@@ -258,7 +264,7 @@ export default function EngagementInvitation() {
               transition={{ delay: 2.1, duration: 0.7 }}
             >
               <motion.div
-                className="bg-gray-800/80 p-2 text-center"
+                className="bg-zinc-800/80 p-2 text-center"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 2.3, duration: 0.5 }}
@@ -290,15 +296,15 @@ export default function EngagementInvitation() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 2.3, duration: 0.6 }}
             >
-              <div className="bg-gray-800 p-3 rounded-lg">
+              <div className="bg-zinc-800 p-3 rounded-lg">
                 <div className="text-3xl font-bold text-[#ffc065]">{days}</div>
                 <div className="text-xs uppercase tracking-wide">Hari</div>
               </div>
-              <div className="bg-gray-800 p-3 rounded-lg">
+              <div className="bg-zinc-800 p-3 rounded-lg">
                 <div className="text-3xl font-bold text-[#ffc065]">{hours}</div>
                 <div className="text-xs uppercase tracking-wide">Jam</div>
               </div>
-              <div className="bg-gray-800 p-3 rounded-lg">
+              <div className="bg-zinc-800 p-3 rounded-lg">
                 <div className="text-3xl font-bold text-[#ffc065]">
                   {minutes}
                 </div>
@@ -313,7 +319,7 @@ export default function EngagementInvitation() {
       <motion.div
         className="absolute top-0 left-0 w-full h-full z-0"
         initial={{ opacity: 0, scale: 1.1 }}
-        animate={{ opacity: 1, scale: 1 }}
+        animate={{ opacity: 0.8, scale: 1 }}
         transition={{ delay: 0.3, duration: 2 }}
       >
         <img

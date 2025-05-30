@@ -7,6 +7,26 @@
   font-style: italic;
 }
 
+/* Add this new class for the glowing effect */
+.text-glow {
+  text-shadow: 0 0 5px rgba(255, 192, 101, 0.5),
+    0 0 10px rgba(255, 192, 101, 0.3), 0 0 15px rgba(255, 192, 101, 0.2),
+    0 0 20px rgba(255, 192, 101, 0.1);
+  animation: pulse-glow 3s infinite alternate;
+}
+
+@keyframes pulse-glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 192, 101, 0.5),
+      0 0 10px rgba(255, 192, 101, 0.3), 0 0 15px rgba(255, 192, 101, 0.2);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 192, 101, 0.7),
+      0 0 20px rgba(255, 192, 101, 0.5), 0 0 30px rgba(255, 192, 101, 0.3),
+      0 0 40px rgba(255, 192, 101, 0.2);
+  }
+}
+
 .comic-neue-light {
   font-family: "Comic Neue", cursive;
   font-weight: 300;
