@@ -44,7 +44,7 @@ export default function EngagementInvitation() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="max-w-3xl text-center border border-yellow-500 rounded-3xl p-8 shadow-2xl  backdrop-blur-sm relative z-20"
+            className="max-w-3xl text-center  rounded-3xl p-8 shadow-2xl  backdrop-blur-sm relative z-20"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
@@ -56,13 +56,13 @@ export default function EngagementInvitation() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2, duration: 0.8 }}
             >
-              <div className="px-6 py-1 bg-yellow-400 text-gray-900 rounded-full text-sm font-medium tracking-wider">
+              <div className="px-6 py-1 bg-[#ffc065] text-gray-900 rounded-full text-sm font-medium tracking-wider">
                 Save The Date
               </div>
             </motion.div>
 
             <motion.h1
-              className="text-4xl md:text-5xl font-bold text-yellow-400 mt-4 mb-2 tracking-wide dancing-script"
+              className="text-4xl md:text-5xl font-bold text-[#ffc065] mt-4 mb-2 tracking-wide dancing-script"
               initial={{ opacity: 0, y: -30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
@@ -71,7 +71,7 @@ export default function EngagementInvitation() {
             </motion.h1>
 
             <motion.div
-              className="h-1 w-8 bg-yellow-400 mx-auto mb-6"
+              className="h-1 w-8 bg-[#ffc065] mx-auto mb-6"
               initial={{ width: 0 }}
               animate={{ width: 50 }}
               transition={{ delay: 0.8, duration: 0.8 }}
@@ -96,9 +96,7 @@ export default function EngagementInvitation() {
                 <div className="font-semibold">Minggu</div>
               </div>
               <div className="text-center">
-                <div className="text-yellow-400 text-5xl font-extrabold">
-                  08
-                </div>
+                <div className="text-[#ffc065] text-5xl font-extrabold">08</div>
                 <div className="text-sm tracking-wide">Juni 2025</div>
               </div>
               <div className="text-center">
@@ -123,17 +121,15 @@ export default function EngagementInvitation() {
               transition={{ delay: 2.3, duration: 0.6 }}
             >
               <div className="bg-gray-800 p-3 rounded-lg">
-                <div className="text-3xl font-bold text-yellow-400">{days}</div>
+                <div className="text-3xl font-bold text-[#ffc065]">{days}</div>
                 <div className="text-xs uppercase tracking-wide">Hari</div>
               </div>
               <div className="bg-gray-800 p-3 rounded-lg">
-                <div className="text-3xl font-bold text-yellow-400">
-                  {hours}
-                </div>
+                <div className="text-3xl font-bold text-[#ffc065]">{hours}</div>
                 <div className="text-xs uppercase tracking-wide">Jam</div>
               </div>
               <div className="bg-gray-800 p-3 rounded-lg">
-                <div className="text-3xl font-bold text-yellow-400">
+                <div className="text-3xl font-bold text-[#ffc065]">
                   {minutes}
                 </div>
                 <div className="text-xs uppercase tracking-wide">Menit</div>
