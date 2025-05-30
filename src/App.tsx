@@ -34,19 +34,6 @@ export default function EngagementInvitation() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Floating animation for decorative elements
-  const floatingAnimation = {
-    initial: { y: 0 },
-    animate: {
-      y: [0, -10, 0],
-      transition: {
-        repeat: Infinity,
-        duration: 3,
-        ease: "easeInOut",
-      },
-    },
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center p-6 overflow-hidden relative">
       {/* Animated Sparkle Overlay */}
@@ -54,29 +41,10 @@ export default function EngagementInvitation() {
         <div className="w-full h-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-yellow-300/10 via-transparent to-transparent animate-pulse" />
       </div>
 
-      {/* Decorative elements */}
-      <motion.div
-        className="absolute top-10 left-10 text-5xl opacity-20 z-5"
-        {...floatingAnimation}
-      >
-        ✨
-      </motion.div>
-      <motion.div
-        className="absolute bottom-20 right-10 text-5xl opacity-20 z-5"
-        {...floatingAnimation}
-        transition={{
-          repeat: Infinity,
-          duration: 4,
-          ease: "easeInOut",
-        }}
-      >
-        ✨
-      </motion.div>
-
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="max-w-3xl text-center border border-yellow-500 rounded-3xl p-8 shadow-2xl bg-gray-900/90 backdrop-blur-sm relative z-20"
+            className="max-w-3xl text-center border border-yellow-500 rounded-3xl p-8 shadow-2xl  backdrop-blur-sm relative z-20"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
@@ -110,7 +78,7 @@ export default function EngagementInvitation() {
             />
 
             <motion.p
-              className="text-sm md:text-base uppercase tracking-widest mb-6"
+              className="text-sm md:text-base tracking-widest mb-6 "
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.6 }}
@@ -171,25 +139,13 @@ export default function EngagementInvitation() {
                 <div className="text-xs uppercase tracking-wide">Menit</div>
               </div>
             </motion.div>
-
-            {/* RSVP button */}
-            {/* <motion.button
-              className="mt-4 px-8 py-3 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold rounded-full transform transition-all hover:scale-105"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 2.6, duration: 0.6 }}
-            >
-              RSVP
-            </motion.button> */}
           </motion.div>
         )}
       </AnimatePresence>
 
       {/* Background Image with parallax effect */}
       <motion.div
-        className="absolute top-0 left-0 w-full h-full z-0 opacity-40"
+        className="absolute top-0 left-0 w-full h-full z-0"
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 0.4, scale: 1 }}
         transition={{ delay: 0.3, duration: 2 }}
@@ -197,7 +153,7 @@ export default function EngagementInvitation() {
         <img
           src="/background.png"
           alt="background flowers"
-          className="w-full h-full object-cover"
+          className="w-full h-full sm:object-cover"
         />
       </motion.div>
 
