@@ -155,21 +155,89 @@ export default function EngagementInvitation() {
               Mengundang Bapak/Ibu untuk menghadiri pertunangan kami pada
             </motion.p>
 
+            {/* Date and time section */}
             <motion.div
               className="flex items-center justify-center gap-6 flex-wrap text-white text-lg md:text-xl mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.5, duration: 0.8 }}
             >
-              <div className="text-center">
-                <div className="font-semibold">Minggu</div>
+              <div className="w-26 max-w-xl">
+                {/* Top decorative line */}
+                <motion.div
+                  className="w-full mx-auto"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.3, duration: 0.6 }}
+                >
+                  <motion.div
+                    className="h-[2px] bg-[#ffc065]"
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: 1 }}
+                    transition={{ delay: 1.4, duration: 0.8, ease: "easeOut" }}
+                  />
+                </motion.div>
+                <div className="text-center my-1">
+                  <div className="font-semibold">MINGGU</div>
+                </div>
+                {/* Bottom decorative line */}
+                <motion.div
+                  className="w-full mx-auto "
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.7, duration: 0.6 }}
+                >
+                  <motion.div
+                    className="h-[2px] bg-[#ffc065]"
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: 1 }}
+                    transition={{ delay: 1.8, duration: 0.8, ease: "easeOut" }}
+                  />
+                </motion.div>
               </div>
-              <div className="text-center">
-                <div className="text-[#ffc065] text-5xl font-extrabold">08</div>
-                <div className="text-sm tracking-wide">Juni 2025</div>
+
+              <div className="text-center flex flex-col items-center justify-center">
+                <div className="text-sm tracking-wide font-semibold">JUNI</div>
+                <div className="text-[#ffc065] text-5xl font-semibold self-center justify-items-center">
+                  08
+                </div>
+                <div className="text-sm tracking-wide font-semibold mt-1">
+                  2025
+                </div>
               </div>
-              <div className="text-center">
-                <div className="font-semibold">15.00 WIB</div>
+
+              <div className="w-26 max-w-xl">
+                {/* Top decorative line */}
+                <motion.div
+                  className="w-full mx-auto"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.3, duration: 0.6 }}
+                >
+                  <motion.div
+                    className="h-[2px] bg-[#ffc065]"
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: 1 }}
+                    transition={{ delay: 1.4, duration: 0.8, ease: "easeOut" }}
+                  />
+                </motion.div>
+                <div className="text-center my-1">
+                  <div className="font-semibold">15.00 WIB</div>
+                </div>
+                {/* Bottom decorative line */}
+                <motion.div
+                  className="w-full mx-auto "
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.7, duration: 0.6 }}
+                >
+                  <motion.div
+                    className="h-[2px] bg-[#ffc065]"
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: 1 }}
+                    transition={{ delay: 1.8, duration: 0.8, ease: "easeOut" }}
+                  />
+                </motion.div>
               </div>
             </motion.div>
 
