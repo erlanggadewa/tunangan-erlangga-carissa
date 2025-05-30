@@ -35,7 +35,7 @@ export default function EngagementInvitation() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center p-8 overflow-hidden relative">
+    <div className="min-h-dvh bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center p-8 overflow-hidden relative">
       {/* Animated Sparkle Overlay */}
       <div className="absolute inset-0 z-10 pointer-events-none">
         <div className="w-full h-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-yellow-300/10 via-transparent to-transparent animate-pulse" />
@@ -189,17 +189,6 @@ export default function EngagementInvitation() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 2.1, duration: 0.7 }}
             >
-              <div className="relative overflow-hidden pt-[56.25%] border-2 border-[#ffc065]/30 rounded-lg">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15840.560206451898!2d110.3072946!3d-7.6281507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcb7af9b596bfa04c!2sSkeyzinda%20Indonesia!5e0!3m2!1sid!2sid!4v1627803663320!5m2!1sid!2sid"
-                  className="absolute top-0 left-0 w-full h-full"
-                  style={{ border: 0 }}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Lokasi Acara"
-                  allowFullScreen
-                />
-              </div>
               <motion.div
                 className="bg-gray-800/80 p-2 text-center"
                 initial={{ opacity: 0 }}
