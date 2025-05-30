@@ -35,7 +35,7 @@ export default function EngagementInvitation() {
   }, []);
 
   return (
-    <div className="min-h-dvh bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center p-8 overflow-hidden relative">
+    <div className="min-h-dvh bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center p-6 overflow-hidden relative">
       {/* Animated Sparkle Overlay */}
       <div className="absolute inset-0 z-10 pointer-events-none">
         <div className="w-full h-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-yellow-300/10 via-transparent to-transparent animate-pulse" />
@@ -162,7 +162,7 @@ export default function EngagementInvitation() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.5, duration: 0.8 }}
             >
-              <div className="w-26 max-w-xl">
+              <div className="w-22 max-w-xl">
                 {/* Top decorative line */}
                 <motion.div
                   className="w-full mx-auto"
@@ -178,7 +178,7 @@ export default function EngagementInvitation() {
                   />
                 </motion.div>
                 <div className="text-center my-1">
-                  <div className="font-semibold">MINGGU</div>
+                  <div className="font-semibold text-base">MINGGU</div>
                 </div>
                 {/* Bottom decorative line */}
                 <motion.div
@@ -198,7 +198,7 @@ export default function EngagementInvitation() {
 
               <div className="text-center flex flex-col items-center justify-center">
                 <div className="text-sm tracking-wide font-semibold">JUNI</div>
-                <div className="text-[#ffc065] text-5xl font-semibold self-center justify-items-center">
+                <div className="text-[#ffc065] text-4xl font-semibold self-center justify-items-center">
                   08
                 </div>
                 <div className="text-sm tracking-wide font-semibold mt-1">
@@ -206,7 +206,7 @@ export default function EngagementInvitation() {
                 </div>
               </div>
 
-              <div className="w-26 max-w-xl">
+              <div className="w-22 max-w-xl">
                 {/* Top decorative line */}
                 <motion.div
                   className="w-full mx-auto"
@@ -222,7 +222,7 @@ export default function EngagementInvitation() {
                   />
                 </motion.div>
                 <div className="text-center my-1">
-                  <div className="font-semibold">15.00 WIB</div>
+                  <p className="font-semibold text-base">15.00 WIB</p>
                 </div>
                 {/* Bottom decorative line */}
                 <motion.div
