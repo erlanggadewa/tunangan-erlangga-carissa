@@ -44,7 +44,7 @@ export default function EngagementInvitation() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="max-w-3xl text-center  rounded-3xl p-8 shadow-2xl  backdrop-blur-sm relative z-20"
+            className="max-w-3xl text-center  rounded-3xl p-8 shadow-2xl  backdrop-blur-[4px] relative z-20"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
