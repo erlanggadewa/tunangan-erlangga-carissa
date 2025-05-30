@@ -71,11 +71,80 @@ export default function EngagementInvitation() {
             </motion.h1>
 
             <motion.div
-              className="h-1 w-8 bg-[#ffc065] mx-auto mb-6"
-              initial={{ width: 0 }}
-              animate={{ width: 50 }}
+              className="flex justify-center items-center mb-6"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
-            />
+            >
+              <motion.svg
+                width="200"
+                height="20"
+                viewBox="0 0 200 20"
+                fill="none"
+              >
+                {/* Left elegant scrollwork */}
+                <motion.path
+                  d="M15 10C25 5 35 15 45 10C55 5 60 15 70 10H85"
+                  stroke="#ffc065"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  initial={{ pathLength: 0 }}
+                  animate={{ pathLength: 1 }}
+                  transition={{ delay: 0.8, duration: 0.7 }}
+                />
+
+                {/* Center ornament */}
+                <motion.path
+                  d="M95 5L100 15L105 5"
+                  stroke="#ffc065"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  initial={{ pathLength: 0 }}
+                  animate={{ pathLength: 1 }}
+                  transition={{ delay: 1.2, duration: 0.5 }}
+                />
+
+                {/* Right elegant scrollwork */}
+                <motion.path
+                  d="M115 10H130C140 5 150 15 160 10C170 5 180 15 185 10"
+                  stroke="#ffc065"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  initial={{ pathLength: 0 }}
+                  animate={{ pathLength: 1 }}
+                  transition={{ delay: 0.8, duration: 0.7 }}
+                />
+
+                {/* Decorative elements */}
+                <motion.circle
+                  cx="100"
+                  cy="10"
+                  r="1.5"
+                  fill="#ffc065"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 1.4, duration: 0.3 }}
+                />
+                <motion.circle
+                  cx="45"
+                  cy="10"
+                  r="1"
+                  fill="#ffc065"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 1.5, duration: 0.2 }}
+                />
+                <motion.circle
+                  cx="160"
+                  cy="10"
+                  r="1"
+                  fill="#ffc065"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 1.5, duration: 0.2 }}
+                />
+              </motion.svg>
+            </motion.div>
 
             <motion.p
               className="text-sm md:text-base tracking-widest mb-6 "
