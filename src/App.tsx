@@ -35,7 +35,7 @@ export default function EngagementInvitation() {
   }, []);
 
   return (
-    <div className="min-h-dvh bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center p-8 overflow-hidden relative">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center p-8 overflow-hidden relative">
       {/* Animated Sparkle Overlay */}
       <div className="absolute inset-0 z-10 pointer-events-none">
         <div className="w-full h-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-yellow-300/10 via-transparent to-transparent animate-pulse" />
