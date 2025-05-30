@@ -313,7 +313,7 @@ export default function EngagementInvitation() {
       <motion.div
         className="absolute top-0 left-0 w-full h-full z-0"
         initial={{ opacity: 0, scale: 1.1 }}
-        animate={{ opacity: 0.4, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.3, duration: 2 }}
       >
         <img
