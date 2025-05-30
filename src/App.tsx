@@ -35,7 +35,7 @@ export default function EngagementInvitation() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center p-6 overflow-hidden relative">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center p-10 overflow-hidden relative">
       {/* Animated Sparkle Overlay */}
       <div className="absolute inset-0 z-10 pointer-events-none">
         <div className="w-full h-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-yellow-300/10 via-transparent to-transparent animate-pulse" />
@@ -44,7 +44,7 @@ export default function EngagementInvitation() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="max-w-3xl text-center  rounded-3xl p-8 shadow-2xl  backdrop-blur-[4px] relative z-20"
+            className="max-w-3xl text-center  rounded-3xl p-4 shadow-2xl  backdrop-blur-[4px] relative z-20"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
