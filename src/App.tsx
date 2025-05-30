@@ -35,7 +35,7 @@ export default function EngagementInvitation() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center p-10 overflow-hidden relative">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col items-center justify-center p-8 overflow-hidden relative">
       {/* Animated Sparkle Overlay */}
       <div className="absolute inset-0 z-10 pointer-events-none">
         <div className="w-full h-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-yellow-300/10 via-transparent to-transparent animate-pulse" />
@@ -174,13 +174,57 @@ export default function EngagementInvitation() {
             </motion.div>
 
             <motion.p
-              className="text-sm md:text-base font-medium mb-8"
+              className="text-sm md:text-base font-medium mb-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 2, duration: 0.6 }}
             >
               Perum Griya Mustika B5 Pangenrejo
             </motion.p>
+
+            {/* Google Maps */}
+            <motion.div
+              className="w-full max-w-md mx-auto mb-8 overflow-hidden rounded-lg shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 2.1, duration: 0.7 }}
+            >
+              <div className="relative overflow-hidden pt-[56.25%] border-2 border-[#ffc065]/30 rounded-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15840.560206451898!2d110.3072946!3d-7.6281507!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcb7af9b596bfa04c!2sSkeyzinda%20Indonesia!5e0!3m2!1sid!2sid!4v1627803663320!5m2!1sid!2sid"
+                  className="absolute top-0 left-0 w-full h-full"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Lokasi Acara"
+                  allowFullScreen
+                />
+              </div>
+              <motion.div
+                className="bg-gray-800/80 p-2 text-center"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 2.3, duration: 0.5 }}
+              >
+                <a
+                  href="https://maps.app.goo.gl/Lj9Nh2DqPZ5zAFc46"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#ffc065] hover:text-[#ffd48a] text-sm transition-colors flex items-center justify-center gap-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 0a5 5 0 0 0-5 5c0 5 5 11 5 11s5-6 5-11a5 5 0 0 0-5-5zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg>
+                  Lihat di Google Maps
+                </a>
+              </motion.div>
+            </motion.div>
 
             {/* Countdown timer */}
             <motion.div
